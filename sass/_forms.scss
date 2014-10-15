@@ -71,8 +71,8 @@ input[type="checkbox"]:checked {
 }
 
 input[type="radio"] {
+  -webkit-appearance: none;
   margin-right: $base-spacing / 4;
-  @include appearance(none);
   background-color: #fff;
   border: 1px solid #cacece;
   padding: 9px;
