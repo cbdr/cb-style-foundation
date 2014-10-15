@@ -46,10 +46,77 @@ textarea {
   resize: vertical;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-  display: inline;
+input[type="checkbox"] {
   margin-right: $base-spacing / 4;
+  @include appearance(none);
+  background-color: #fafafa;
+  border: 1px solid #cacece;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+  padding: 9px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+}
+
+input[type="checkbox"]:active, input[type="checkbox"]:checked:active {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+input[type="checkbox"]:checked {
+  content: '\2714';
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: #99a1a7;
+}
+
+input[type="radio"] {
+  @extend .visuallyHidden;
+}
+
+input[type="radio"] + label {
+  position:relative;
+  padding-left:25px;
+  &:before{
+    left:0;
+    top:0;
+    content:" ";
+    background-color: #FFFFFF;
+    box-shadow: 0 0 0 .1em #CCCCCC inset, 0 0 0 .3em #FFFFFF inset, 0 0 0 .4em #CCCCCC inset, 0 0 0 .7em #FFFFFF inset;
+    padding: .6em;
+    margin-right: $base-spacing / 4;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+  }
+}
+
+input[type="radio"] + label{
+  &:before{}
+}
+input[type="checkbox"] + label{
+  &:before{}
+}
+
+input[type="radio"]:checked + label{
+  &:before{
+    background: #127AB3;
+    box-shadow: 0 0 0 .1em #CCCCCC inset, 0 0 0 .3em #FFFFFF inset, 0 0 0 .7em #127AB3 inset;
+  }
+}
+input[type="radio"]:hover + label{
+  &:before{
+    background: #179FCA;
+    box-shadow: 0 0 0 .1em #179FCA inset, 0 0 0 .3em #FFFFFF inset, 0 0 0 .7em #179FCA inset;
+    @include transition(box-shadow 0.5s linear);
+  }
+}
+
+input[type="radio"]:active + label{
+  &:before{
+    background: #FFFFFF;
+    box-shadow: 0 0 0 .3em #179FCA inset, 0 0 0 .7em #FFFFFF inset;
+  }
 }
 
 select {
