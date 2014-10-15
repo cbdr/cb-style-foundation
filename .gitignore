@@ -1,0 +1,11 @@
+node_modules/
+bower/*/
+.sass-cache/
+.idea/
+
+.env
+.DS_Store
+.ruby-gemset
+.ruby-version
+
+log/*.log

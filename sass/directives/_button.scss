@@ -1,0 +1,38 @@
+%button {
+  -webkit-font-smoothing: antialiased;
+  border-radius: $button-border-radius;
+  color: $button-text-color;
+  display: inline-block;
+  font-size: $base-font-size;
+  font-weight: bold;
+  line-height: $button-line-height;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  border: 2px solid $button-border-color;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: top;
+  text-align: center;
+  white-space: nowrap;
+  background-color: $base-button-color;
+
+  @include appearance(none);
+  @include background-color-with-hover($base-button-color);
+
+  &:disabled {
+    color: $button-text-color-disabled;
+    border-color: $button-border-color-disabled;
+    background-color: transparent;
+    cursor: not-allowed;
+  }
+}
+
+%primary-button {
+  @extend %button;
+  @include background-color-with-hover($accent-primary);
+}
+
+%small-button {
+  height: 2.4em;
+  line-height: $small-button-line-height;
+}

@@ -1,0 +1,89 @@
+// Basic Colors
+$black: #000000;
+$white: #FFFFFF;
+$blue: #477DCA;
+$light-red: #FBE3E4;
+$light-yellow: #FFF6BF;
+$light-green: #E6EFC2;
+
+$grey-darkest: lighten($black, 20);
+$grey-darker: lighten($grey-darkest, 20);
+$grey-dark: lighten($grey-darker, 20);
+$grey-light: #BBBBBB;
+$grey-lighter: #CCCCCC;
+$grey-lightest: #EEEEEE;
+
+// Primary Palette
+$primary: #023658;
+$primary-dark: #02304F;
+$primary-darker: #012842;
+$primary-darkest: #011B2C;
+$primary-light: #1c4a69;
+$primary-lighter: #416882;
+$primary-lightest: #819bac;
+
+// Secondary Palette
+$secondary: #ff6600;
+$secondary-dark: #e55c00;
+$secondary-darker: #bf4c00;
+$secondary-darkest: #7f3300;
+$secondary-light: #ff761a;
+$secondary-lighter: #ff8c40;
+$secondary-lightest: #ffb380;
+
+// Primary Accent
+$accent-primary: #127AB3;
+$accent-primary-light: #89BDD9;
+$accent-primary-dark: #093D59;
+
+// Success Accent
+$accent-success: #6EA23D;
+$accent-success-light: #B7D19E;
+$accent-success-dark: #37511E;
+
+// Warning Accent
+$accent-warning: #FBC500;
+$accent-warning-light: #FDE280;
+$accent-warning-dark: #37511E;
+
+// Danger Accent
+$accent-danger: #FF3C30;
+$accent-danger-light: #FF9E98;
+$accent-danger-dark: #7F1E18;
+
+// Backgrounds
+$base-background-color: $grey-lightest;
+$panel-primary: $white;
+$panel-secondary: #F9F9F9;
+
+// Font
+$body-text-color: $grey-darkest;
+$header-text-color: $primary;
+$base-accent-color: #179fca;
+
+// Link
+$base-link-color: $accent-primary;
+$hover-link-color: $base-accent-color;
+
+// Border
+$base-border-color: $grey-light;
+$base-border: 1px solid $base-border-color;
+
+// Header/Footer
+$header-background-color: $primary;
+$header-accent-color: $primary-lightest;
+$footer-background-color: $header-background-color;
+$footer-accent-color: $header-accent-color;
+
+// Buttons
+$base-button-color: $base-link-color;
+$hover-button-color: $hover-link-color;
+$button-text-color: $white;
+$button-text-color-disabled: $grey-light;
+$button-border-color: $base-button-color;
+$button-border-color-disabled: $grey-lighter;
+
+// Form
+$form-border-color: $base-border-color;
+$form-border-color-hover: darken($base-border-color, 10);
+$form-border-color-focus: $base-accent-color;
