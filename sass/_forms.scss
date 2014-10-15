@@ -71,43 +71,51 @@ input[type="checkbox"]:checked {
 }
 
 input[type="radio"] {
-  -webkit-appearance: none;
-  margin-right: $base-spacing / 4;
-  background-color: #fff;
-  border: 1px solid #cacece;
-  padding: 9px;
-  border-radius: 50px;
-  display: inline-block;
-  position: relative;
-  &:checked:hover {
-    background-color: #179fca;
-  }
-  &:checked {
-    background-color: #e9ecee;
-    border: 1px solid #adb8c0;
-  }
-  &:hover {
-    border-color: #179fca;
-  }
-  &:after, &:checked:after, &:checked:hover:after, &:hover:after {
-    content: ' ';
-    width: 12px;
-    height: 12px;
+  @extend .visuallyHidden;
+}
+
+input[type="radio"] + label {
+  position:relative;
+  padding-left:25px;
+  &:before{
+    left:0;
+    top:0;
+    content:" ";
+    background-color: #FFFFFF;
+    box-shadow: 0 0 0 .1em #CCCCCC inset, 0 0 0 .3em #FFFFFF inset, 0 0 0 .4em #CCCCCC inset, 0 0 0 .7em #FFFFFF inset;
+    padding: .6em;
+    margin-right: $base-spacing / 4;
     border-radius: 50px;
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    font-size: 32px;
+    display: inline-block;
+    position: relative;
   }
-  &:checked:after {
-    background: #127ab3;
+}
+
+input[type="radio"] + label{
+  &:before{}
+}
+input[type="checkbox"] + label{
+  &:before{}
+}
+
+input[type="radio"]:checked + label{
+  &:before{
+    background: #127AB3;
+    box-shadow: 0 0 0 .1em #CCCCCC inset, 0 0 0 .3em #FFFFFF inset, 0 0 0 .7em #127AB3 inset;
   }
-  &:checked:hover:after {
-    background: #fff;
+}
+input[type="radio"]:hover + label{
+  &:before{
+    background: #179FCA;
+    box-shadow: 0 0 0 .1em #179FCA inset, 0 0 0 .3em #FFFFFF inset, 0 0 0 .7em #179FCA inset;
+    @include transition(box-shadow 0.5s linear);
   }
-  &:hover:after {
-    border-color: #179fca;
-    background: #179fca;
+}
+
+input[type="radio"]:active + label{
+  &:before{
+    background: #FFFFFF;
+    box-shadow: 0 0 0 .3em #179FCA inset, 0 0 0 .7em #FFFFFF inset;
   }
 }
 
