@@ -10,13 +10,17 @@ Install with Bower (from an appropriate repository)
 
 ```sh
 $ bower install cb-style-foundation
-````
+```
 
-Now consume the SASS files using your tool/framework of choice!
+Now, import `sass/base` in your main `application.scss`. For example:
+
+```scss
+@import 'bower/cb-style-foundation/sass/base';
+```
 
 ### What's included
 
-At the moment, only uncompiled SASS source files are available for consumption. That means your application will need to perform the precompilation, whether it be through Gulp, Grunt, Rails asset pipeline, etc. Do note that `cb-style-foundation` depends upon [Bourbon](http://bourbon.io/) for basic SASS mixins.
+At the moment, only uncompiled SASS source files are available for consumption. That means your application will need to perform the precompilation, whether it be through Gulp, Grunt, Rails asset pipeline, etc. Do note that `cb-style-foundation` depends upon [Bourbon](http://bourbon.io/) for basic SASS mixins. Additionally, this library includes its own reset.
 
 The current layout of this library is heavily inspired by [Bitters](http://bitters.bourbon.io/), a wonderful boilerplate of common-sense SASS conventions and structure. Our outline looks a little something like this:
 
