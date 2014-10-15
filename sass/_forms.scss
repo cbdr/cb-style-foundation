@@ -81,11 +81,11 @@ input[type="radio"] + label {
     left:0;
     top:0;
     content:" ";
-    background-color: #FFFFFF;
-    box-shadow: 0 0 0 .1em #CCCCCC inset, 0 0 0 .3em #FFFFFF inset, 0 0 0 .4em #CCCCCC inset, 0 0 0 .7em #FFFFFF inset;
-    padding: .6em;
+    background-color: $white;
+    box-shadow: 0 0 0 .1em $grey-lighter inset, 0 0 0 .3em $white inset, 0 0 0 .4em $grey-lighter inset, 0 0 0 .7em $white inset;
+    padding: $base-font-size * 0.6;
     margin-right: $base-spacing / 4;
-    border-radius: 50px;
+    border-radius: $radio-border-radius;
     display: inline-block;
     position: relative;
   }
@@ -100,22 +100,22 @@ input[type="checkbox"] + label{
 
 input[type="radio"]:checked + label{
   &:before{
-    background: #127AB3;
-    box-shadow: 0 0 0 .1em #CCCCCC inset, 0 0 0 .3em #FFFFFF inset, 0 0 0 .7em #127AB3 inset;
+    background: $accent-primary;
+    box-shadow: 0 0 0 .1em $grey-lighter inset, 0 0 0 .3em $white inset, 0 0 0 .7em $accent-primary inset;
   }
 }
 input[type="radio"]:hover + label{
   &:before{
-    background: #179FCA;
-    box-shadow: 0 0 0 .1em #179FCA inset, 0 0 0 .3em #FFFFFF inset, 0 0 0 .7em #179FCA inset;
+    background: $accent-active;
+    box-shadow: 0 0 0 .1em $accent-active inset, 0 0 0 .3em $white inset, 0 0 0 .7em $accent-active inset;
     @include transition(box-shadow 0.5s linear);
   }
 }
 
 input[type="radio"]:active + label{
   &:before{
-    background: #FFFFFF;
-    box-shadow: 0 0 0 .3em #179FCA inset, 0 0 0 .7em #FFFFFF inset;
+    background: $white;
+    box-shadow: 0 0 0 .3em $accent-active inset, 0 0 0 .7em $white inset;
   }
 }
 
