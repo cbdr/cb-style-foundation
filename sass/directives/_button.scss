@@ -21,6 +21,7 @@
   vertical-align: top;
   text-align: center;
   white-space: nowrap;
+  width: auto;
   background-color: $base-button-color;
 
   @include appearance(none);
