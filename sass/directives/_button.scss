@@ -40,9 +40,6 @@
   &:disabled {
     @extend %disabled;
   }
-  &.disabled:hover {
-    @extend %disabled;
-  }
 }
 
 // Button Types

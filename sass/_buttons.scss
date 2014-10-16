@@ -7,3 +7,7 @@ input[type="submit"] {
 .disabled {
   @extend %disabled;
 }
+
+.disabled:hover {
+  @extend %disabled;
+}
