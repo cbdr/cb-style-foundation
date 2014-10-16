@@ -3,11 +3,3 @@ button,
 input[type="submit"] {
   @extend %button;
 }
-
-.disabled {
-  @extend %disabled;
-}
-
-.disabled:hover {
-  @extend %disabled;
-}
