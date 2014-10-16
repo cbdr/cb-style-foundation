@@ -1,3 +1,10 @@
+%disabled {
+  color: $button-text-color-disabled;
+  border-color: $button-border-color-disabled;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
 %button {
   -webkit-font-smoothing: antialiased;
   border-radius: $button-border-radius;
@@ -18,23 +25,20 @@
 
   @include appearance(none);
 
-  &:hover {
+  &:hover:enabled {
     background-color: $base-hover-button-color;
     color: $base-hover-button-text-color;
     border-color: $base-hover-button-border-color;
   }
 
-  &:active {
+  &:active:enabled {
     background-color: $base-active-button-color;
     color: $base-active-button-text-color;
     border-color: $base-active-button-border-color;
   }
 
-  &:disabled, &[disabled]:hover, &:disabled:active, &.disabled, &.disabled:hover, &.disabled:active {
-    color: $button-text-color-disabled !important;
-    border-color: $button-border-color-disabled !important;
-    background-color: transparent !important;
-    cursor: not-allowed !important;
+  &:disabled, &.disabled, &.disabled:hover {
+    @extend %disabled;
   }
 }
 
@@ -47,16 +51,20 @@
   color: $primary-button-text-color;
   border-color: $primary-button-border-color;
 
-  &:hover {
+  &:hover:enabled {
     background-color: $primary-hover-button-color;
     color: $primary-hover-button-text-color;
     border-color: $primary-hover-button-border-color;
   }
 
-  &:active {
+  &:active:enabled {
     background-color: $primary-active-button-color;
     color: $primary-active-button-text-color;
     border-color: $primary-active-button-border-color;
+  }
+
+  &:disabled, &.disabled, &.disabled:hover {
+    @extend %disabled;
   }
 }
 
@@ -67,16 +75,20 @@
   color: $secondary-button-text-color;
   border-color: $secondary-button-border-color;
 
-  &:hover {
+  &:hover:enabled {
     background-color: $secondary-hover-button-color;
     color: $secondary-hover-button-text-color;
     border-color: $secondary-hover-button-border-color;
   }
 
-  &:active {
+  &:active:enabled {
     background-color: $secondary-active-button-color;
     color: $secondary-active-button-text-color;
     border-color: $secondary-active-button-border-color;
+  }
+
+  &:disabled, &.disabled, &.disabled:hover {
+    @extend %disabled;
   }
 }
 
