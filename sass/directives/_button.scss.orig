@@ -1,10 +1,3 @@
-%disabled {
-  color: $button-text-color-disabled;
-  border-color: $button-border-color-disabled;
-  background-color: transparent;
-  cursor: not-allowed;
-}
-
 %button {
   -webkit-font-smoothing: antialiased;
   border-radius: $button-border-radius;
@@ -38,10 +31,22 @@
   }
 
   &:disabled {
-    @extend %disabled;
+    color: $button-text-color-disabled;
+    border-color: $button-border-color-disabled;
+    background-color: transparent;
+    cursor: not-allowed;
+  }
+  &.disabled {
+    color: $button-text-color-disabled;
+    border-color: $button-border-color-disabled;
+    background-color: transparent;
+    cursor: not-allowed;
   }
   &.disabled:hover {
-    @extend %disabled;
+    color: $button-text-color-disabled;
+    border-color: $button-border-color-disabled;
+    background-color: transparent;
+    cursor: not-allowed;
   }
 }
 
@@ -90,6 +95,7 @@
 // Button Sizes
 
 %small-button {
+<<<<<<< HEAD
   font-size: $small-button-font-size;
   padding: $small-button-vertical-padding $small-button-horizontal-padding;
 }
@@ -102,4 +108,8 @@
 %large-button {
   font-size: $large-button-font-size;
   padding: $large-button-vertical-padding $large-button-horizontal-padding;
+=======
+  height: 2.4em;
+  line-height: $small-button-line-height;
+>>>>>>> disabled
 }
