@@ -30,7 +30,7 @@
     border-color: $base-active-button-border-color;
   }
 
-  &:disabled, &:disabled:hover, &:disabled:active, &.disabled, &.disabled:hover, &.disabled:active {
+  &:disabled, &[disabled]:hover, &:disabled:active, &.disabled, &.disabled:hover, &.disabled:active {
     color: $button-text-color-disabled !important;
     border-color: $button-border-color-disabled !important;
     background-color: transparent !important;
