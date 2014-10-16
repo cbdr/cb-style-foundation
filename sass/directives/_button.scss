@@ -3,10 +3,10 @@
   border-radius: $button-border-radius;
   color: $base-button-text-color;
   display: inline-block;
-  font-size: $base-font-size;
+  font-size: $base-button-font-size;
   font-weight: bold;
-  line-height: $button-line-height;
-  padding: 0.75em 1em;
+  line-height: $base-button-line-height;
+  padding: $base-button-vertical-padding $base-button-horizontal-padding;
   text-decoration: none;
   border: 2px solid $base-button-border-color;
   cursor: pointer;
@@ -37,6 +37,8 @@
     cursor: not-allowed;
   }
 }
+
+// Button Types
 
 %primary-button {
   @extend %button;
@@ -78,7 +80,19 @@
   }
 }
 
+// Button Sizes
+
 %small-button {
-  height: 2.4em;
-  line-height: $small-button-line-height;
+  font-size: $small-button-font-size;
+  padding: $small-button-vertical-padding $small-button-horizontal-padding;
+}
+
+%medium-button {
+  font-size: $medium-button-font-size;
+  padding: $medium-button-vertical-padding $medium-button-horizontal-padding;
+}
+
+%large-button {
+  font-size: $large-button-font-size;
+  padding: $large-button-vertical-padding $large-button-horizontal-padding;
 }
