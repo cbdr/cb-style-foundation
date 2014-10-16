@@ -37,7 +37,7 @@
     border-color: $base-active-button-border-color;
   }
 
-  &:disabled {
+  &:disabled, &.disabled, &.disabled:hover {
     @extend %disabled;
   }
 }
@@ -62,6 +62,10 @@
     color: $primary-active-button-text-color;
     border-color: $primary-active-button-border-color;
   }
+
+  &:disabled, &.disabled, &.disabled:hover {
+    @extend %disabled;
+  }
 }
 
 %secondary-button {
@@ -81,6 +85,10 @@
     background-color: $secondary-active-button-color;
     color: $secondary-active-button-text-color;
     border-color: $secondary-active-button-border-color;
+  }
+
+  &:disabled, &.disabled, &.disabled:hover {
+    @extend %disabled;
   }
 }
 
