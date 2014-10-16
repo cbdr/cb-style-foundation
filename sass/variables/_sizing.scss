@@ -18,8 +18,24 @@ $h6-font-size: $base-font-size;
 // Line height
 $base-line-height: 1.5;
 $header-line-height: 1.25;
-$button-line-height: 1.0;
-$small-button-line-height: $button-line-height / 2;
+$base-button-line-height: 1.0;
+
+// Button Sizes
+$base-button-font-size: $base-font-size;
+$base-button-vertical-padding: 0.688em;
+$base-button-horizontal-padding: 1.5em;
+
+$medium-button-font-size: $base-button-font-size;
+$medium-button-vertical-padding: $base-button-vertical-padding;
+$medium-button-horizontal-padding: $base-button-horizontal-padding;
+
+$small-button-font-size: $base-button-font-size * 0.875;
+$small-button-vertical-padding: 0.438em;
+$small-button-horizontal-padding: 1.25em;
+
+$large-button-font-size: $base-button-font-size * 1.25;
+$large-button-vertical-padding: 0.813em;
+$large-button-horizontal-padding: 1.625em;
 
 // Other Sizes
 $base-border-radius: 5px;

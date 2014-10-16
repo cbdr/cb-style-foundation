@@ -80,10 +80,36 @@ $footer-accent-color: $header-accent-color;
 
 // Buttons
 $base-button-color: $base-link-color;
-$hover-button-color: $hover-link-color;
-$button-text-color: $white;
+$base-button-text-color: $white;
+$base-button-border-color: $base-button-color;
+$base-hover-button-color: $hover-link-color;
+$base-hover-button-text-color: $base-button-text-color;
+$base-hover-button-border-color: $base-hover-button-color;
+$base-active-button-color: $primary;
+$base-active-button-text-color: $base-button-text-color;
+$base-active-button-border-color: $base-active-button-color;
+
+$primary-button-color: $base-button-color;
+$primary-button-text-color: $base-button-text-color;
+$primary-button-border-color: $base-button-border-color;
+$primary-hover-button-color: $base-hover-button-color;
+$primary-hover-button-text-color: $base-hover-button-text-color;
+$primary-hover-button-border-color: $primary-hover-button-color;
+$primary-active-button-color: $primary;
+$primary-active-button-text-color: $base-active-button-text-color;
+$primary-active-button-border-color: $primary-active-button-color;
+
+$secondary-button-color: $base-background-color;
+$secondary-button-text-color: $base-button-color;
+$secondary-button-border-color: $grey-lighter;
+$secondary-hover-button-color: $secondary-button-color;
+$secondary-hover-button-text-color: $base-hover-button-color;
+$secondary-hover-button-border-color: $secondary-button-border-color;
+$secondary-active-button-color: $secondary-button-color;
+$secondary-active-button-text-color: $base-active-button-color;
+$secondary-active-button-border-color: $secondary-active-button-text-color;
+
 $button-text-color-disabled: $grey-light;
-$button-border-color: $base-button-color;
 $button-border-color-disabled: $grey-lighter;
 
 // Form
