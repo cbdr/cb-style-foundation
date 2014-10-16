@@ -25,6 +25,12 @@
     background-color: transparent;
     cursor: not-allowed;
   }
+  &.disabled {
+    color: $button-text-color-disabled;
+    border-color: $button-border-color-disabled;
+    background-color: transparent;
+    cursor: not-allowed;
+  }
 }
 
 %primary-button {
