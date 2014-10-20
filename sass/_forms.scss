@@ -132,29 +132,6 @@ select {
   margin-bottom: 5px;
 }
 
-// Form Groups
-
 div.group {
   margin-top: 1.0em;
-}
-
-.button-group button, .button-group .button {
-  margin: 0;
-  border-radius: 0;
-  width: 100%;
-
-  &:first-child {
-    border-top-right-radius: $button-border-radius;
-    border-top-left-radius: $button-border-radius;
-  }
-
-  &:last-child {
-    border-bottom-right-radius: $button-border-radius;
-    border-bottom-left-radius: $button-border-radius;
-  }
-
-  &:not(:last-child) {
-    border-bottom: 1px solid $grey-dark;
-    box-shadow: none;
-  }
 }

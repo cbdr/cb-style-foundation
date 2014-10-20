@@ -15,7 +15,7 @@
   line-height: $base-button-line-height;
   padding: $base-button-vertical-padding $base-button-horizontal-padding;
   text-decoration: none;
-  border: 2px solid $base-button-border-color;
+  border: $base-button-border-size solid $base-button-border-color;
   cursor: pointer;
   user-select: none;
   vertical-align: top;
