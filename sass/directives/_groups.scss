@@ -1,0 +1,23 @@
+%button-group-vertical button, %button-group-vertical .button {
+  margin: 0;
+  border-radius: 0;
+  width: 100%;
+
+  &:first-child {
+    border-top-right-radius: $button-border-radius;
+    border-top-left-radius: $button-border-radius;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: $button-border-radius;
+    border-bottom-left-radius: $button-border-radius;
+  }
+
+  &:not(:first-child) {
+    border-top-width: $base-button-border-size / 2;
+  }
+
+  &:not(:last-child) {
+    border-bottom-width: $base-button-border-size / 2;
+  }
+}
