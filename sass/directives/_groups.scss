@@ -1,23 +1,28 @@
-%button-group-vertical button, %button-group-vertical .button {
-  margin: 0;
-  border-radius: 0;
-  width: 100%;
+%button-group-vertical {
+  display: inline-block;
 
-  &:first-child {
-    border-top-right-radius: $button-border-radius;
-    border-top-left-radius: $button-border-radius;
-  }
+  > button, > .button {
+    display: block;
+    border-radius: 0;
+    width: 100%;
+    max-width: 100%;
 
-  &:last-child {
-    border-bottom-right-radius: $button-border-radius;
-    border-bottom-left-radius: $button-border-radius;
-  }
+    &:first-child {
+      border-top-right-radius: $button-border-radius;
+      border-top-left-radius: $button-border-radius;
+    }
 
-  &:not(:first-child) {
-    border-top-width: $base-button-border-size / 2;
-  }
+    &:last-child {
+      border-bottom-right-radius: $button-border-radius;
+      border-bottom-left-radius: $button-border-radius;
+    }
 
-  &:not(:last-child) {
-    border-bottom-width: $base-button-border-size / 2;
+    &:not(:first-child) {
+      border-top-width: $base-button-border-size / 2;
+    }
+
+    &:not(:last-child) {
+      border-bottom-width: $base-button-border-size / 2;
+    }
   }
 }
