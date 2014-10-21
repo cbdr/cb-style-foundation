@@ -41,8 +41,9 @@ $large-button-horizontal-padding: 1.625em;
 // Other Sizes
 $base-border-radius: 5px;
 $button-border-radius: $base-border-radius;
-$panel-border-radius: $base-border-radius;
+$panel-border-radius: 3px;
 $radio-border-radius: $base-border-radius * 10;
+$checkbox-border-radius: $panel-border-radius;
 $base-spacing: $base-line-height * 1em;
 $base-z-index: 0;
 
@@ -60,7 +61,13 @@ $footer-accent-height: $header-accent-height;
 
 // Forms
 $form-border-radius: $base-border-radius;
-$form-box-shadow: inset 0 1px 3px rgba(black, 0.06);
+$form-box-shadow: inset 0 1px 3px rgba($black, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
 $form-font-size: $base-font-size;
 $form-font-family: $base-font-family;
+
+// Form Elements
+$base-radio-box-shadow: 0 0 0 ($base-font-size / 6) $grey-lighter inset, 0 0 0 ($base-font-size / 2) $white inset, 0 0 0 ($base-font-size * (2/3)) $grey-lighter inset;
+$hover-radio-box-shadow: 0 0 0 ($base-font-size / 6) $accent-active inset, 0 0 0 ($base-font-size / 2) $white inset, 0 0 0 ($base-font-size * (7/6)) $accent-active inset;
+$checked-radio-box-shadow: 0 0 0 ($base-font-size / 6) $grey-lighter inset, 0 0 0 ($base-font-size / 2) $white inset, 0 0 0 ($base-font-size * (7/6)) $accent-primary inset;
+$active-radio-box-shadow: 0 0 0 ($base-font-size / 2) $accent-active inset, 0 0 0 ($base-font-size * (7/6)) $white inset;
