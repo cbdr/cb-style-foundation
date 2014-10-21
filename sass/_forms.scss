@@ -70,7 +70,6 @@ input[type="radio"] + label {
 
 input[type="radio"]:hover + label {
   &:before {
-    background: $accent-active;
     box-shadow: $hover-radio-box-shadow;
     @include transition(box-shadow 0.5s linear);
   }
@@ -78,14 +77,12 @@ input[type="radio"]:hover + label {
 
 input[type="radio"]:checked + label {
   &:before {
-    background: $accent-primary;
     box-shadow: $checked-radio-box-shadow;
   }
 }
 
 input[type="radio"]:active + label {
   &:before {
-    background: $white;
     box-shadow: $active-radio-box-shadow;
   }
 }

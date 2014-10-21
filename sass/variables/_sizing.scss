@@ -67,7 +67,7 @@ $form-font-size: $base-font-size;
 $form-font-family: $base-font-family;
 
 // Form Elements
-$base-radio-box-shadow: 0 0 0 ($base-font-size / 6) $grey-lighter inset, 0 0 0 ($base-font-size / 2) $white inset, 0 0 0 ($base-font-size * (2/3)) $grey-lighter inset;
-$hover-radio-box-shadow: 0 0 0 ($base-font-size / 6) $accent-active inset, 0 0 0 ($base-font-size / 2) $white inset, 0 0 0 ($base-font-size * (7/6)) $accent-active inset;
-$checked-radio-box-shadow: 0 0 0 ($base-font-size / 6) $grey-lighter inset, 0 0 0 ($base-font-size / 2) $white inset, 0 0 0 ($base-font-size * (7/6)) $accent-primary inset;
-$active-radio-box-shadow: 0 0 0 ($base-font-size / 2) $accent-active inset, 0 0 0 ($base-font-size * (7/6)) $white inset;
+$base-radio-box-shadow: 0 0 0 1px $grey-lighter inset, 0 0 0 9px $white inset, 0 0 0 10px $grey-lighter inset;
+$hover-radio-box-shadow: 0 0 0 1px $accent-active inset, 0 0 0 9px $white inset, 0 0 0 16px $accent-active inset;
+$checked-radio-box-shadow: 0 0 0 1px $grey-lighter inset, 0 0 0 9px $white inset, 0 0 0 16px $accent-primary inset;
+$active-radio-box-shadow: 0 0 0 8px $accent-active inset, 0 0 0 16px $white inset;
