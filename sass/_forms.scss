@@ -24,12 +24,13 @@ select[multiple=multiple] {
   @include transition(border-color);
   background-color: $white;
   border-radius: $form-border-radius;
-  border: 1px solid $form-border-color;
+  border: $base-input-border-size solid $form-border-color;
   box-shadow: $form-box-shadow;
   font-family: $form-font-family;
-  font-size: $form-font-size;
+  font-size: $base-input-font-size;
+  line-height: $base-input-line-height;
   margin-bottom: $base-spacing / 2;
-  padding: ($base-spacing / 3) ($base-spacing / 3);
+  padding: $base-input-vertical-padding $base-input-horizontal-padding;
 
   &:hover {
     border-color: $form-border-color-hover;
