@@ -29,8 +29,8 @@ select[multiple=multiple] {
   font-family: $form-font-family;
   font-size: $base-input-font-size;
   line-height: $base-input-line-height;
-  margin-bottom: $base-spacing / 2;
   padding: $base-input-vertical-padding $base-input-horizontal-padding;
+  margin-bottom: 3px; // Just enough margin to expose the 'glow'
 
   &:hover {
     border-color: $form-border-color-hover;
@@ -102,5 +102,6 @@ select {
 }
 
 div.group {
+  overflow: auto; // Push height even when form elements float
   margin-top: $base-spacing / 2;
 }
