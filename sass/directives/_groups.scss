@@ -18,11 +18,11 @@
     }
 
     &:not(:first-child) {
-      border-top-width: $base-button-border-size / 2;
+      border-top-width: $base-button-border-size;
     }
 
     &:not(:last-child) {
-      border-bottom-width: $base-button-border-size / 2;
+      border-bottom-width: 0;
     }
   }
 }
