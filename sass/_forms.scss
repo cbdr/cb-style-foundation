@@ -105,3 +105,7 @@ div.group {
   overflow: auto; // Push height even when form elements float
   margin-top: $base-spacing / 2;
 }
+
+table {
+  @include font-feature-settings("kern", "liga", "tnum");
+}

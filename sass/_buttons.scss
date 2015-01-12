@@ -1,6 +1,5 @@
 .button,
-button,
-input[type="submit"] {
+#{$all-button-inputs} {
   @extend %button;
 }
 
