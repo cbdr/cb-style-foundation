@@ -1,8 +1,14 @@
 # cb-style-foundation
 
-A SASS library providing basic components and typography for a unified CareerBuilder experience.
+A SASS library providing basic components and typography for a unified CareerBuilder experience. See a demo [here](https://r.careerbuilder.com/engineer-jobs-in-atlanta).
 
-**Status:** Still hammering things out!
+**Status:** Basic styling completed:
+* Buttons (small, medium, large + primary, secondary)
+* Horizontal/vertical button groups
+* Forms
+* Text inputs
+* Panels
+* Flashes
 
 ### Consumption
 
